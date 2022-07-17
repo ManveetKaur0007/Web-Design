@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+   My Index File
+   Author: Manveet Kaur
+   Student Id: W0782002
+   Date: 2021/12/11
+   Filename: index.html
+   -->
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Manveet Kaur</title>
+    <link href="style.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <header>
+        <h1>Contact Inforamtion!</h1>
+        <nav>
+            <a href="index.html"><h2>Main</h2></a>
+            <a href="about.html"><h2>About</h2></a>
+            <a href="projects.html"><h2>Projects</h2></a>
+            <a href="contact.html"><h2>Contact</h2></a>
+        </nav>
+    </header>
+
+    <main>
+        <p>If you want to contact me, feel free to fill this contact form and I will get in touch with you as soon as possible.</p><br/><br/>
+        <p><em>Required values are marked by an asterisk (*)</em></p>
+        <form id="application" action="#" method="post" >
+            <fieldset id="yourInfo">
+            <legend>Your Information</legend>
+                <div class="formRow">
+                    <label for="firstName">First Name*</label>
+                    <input name="firstName" id="firstName" type="text" placeholder="first name" required/>
+                </div><br/>
+        
+                <div class="formRow">
+                    <label for="lastname">Last Name*</label>
+                    <input name="lastName" id="lastName" type="text" placeholder="last name" required/>
+                </div><br/>
+        
+                <div class="formRow">
+                    <label for="dateOfBirth">Date Of Birth</label>
+                    <input name="dateOfBirth" id="dateOfBirth" type="date" />
+                </div><br/>   
+        
+                <div class="formRow">
+                    <label for="city">City</label>
+                    <input name="city" id="city" type="text"/>
+                </div><br/>
+        
+                <div class="formRow">
+                    <label for="province">Province</label>
+                    <input name="province" id="province" type="text"/>
+                </div><br/>
+        
+                <div class="formRow">
+                    <label for="zip">Postal code</label>
+                    <input name="zip" id="zip" type="text" placeholder="nnnnn (-nnnn)"
+                    pattern="^\d{5}(-\d{4})?$"/>
+                </div><br/>
+        
+                <div class="formRow">
+                    <label for="phoneNumber">Cell number</label>
+                    <input name="phoneNumber" id="phoneNumber" type="tel"placeholder="(nnn) nnn-nnnn" 
+                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+                </div><br/>
+        
+                <div class="formRow">
+                        <label>Do you want me to call you rather than texting you?</label>
+                        <fieldset class="optGroup">
+                        <label for="fYes">Yes</label>
+                        <input name="sFriend" id="fYes" value="yes"
+                        type="radio" />
+                        <label for="fNo">No</label>
+                        <input name="sFriend" id="fNo" value="no"
+                        type="radio" />
+                        </fieldset>
+                </div><br/>
+            </fieldset>
+
+        
+            <fieldset id="extraInfo">
+            <legend>Extra Information</legend>
+                <div class="formRow">
+                    <label for="info">How did you hear about me?</label>
+                    <select name="infoSrc" id="info" size="5" multiple>
+                    <option value="internet">Internet</option>
+                    <option value="mag">Friends</option>
+                    <option value="news">Same College</option>
+                    <option value="word">Word of Mouth</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div><br/>
+            </fieldset><br/>
+        
+            <div id="buttons">
+                <input type="submit" value="Submit My Form" />
+                <input type="reset" value="Cancel" />
+            </div>
+        </form>
+    </main>
+<footer>
+    Copyright 2021 – <a href = "https://www.stclaircollege.ca">St Clair College</a> &#8226; Manveet Kaur &#8226; W0782002
+</footer>
+</body>
+</html>
