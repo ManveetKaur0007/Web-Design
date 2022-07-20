@@ -1,0 +1,84 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'festiveregular';
+    src: url('festive-regular.woff2') format('woff2'),
+         url('festive-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*   
+    CSS File
+	Filename : style_file.css
+    Author : Manveet Kaur
+	Date : 2021/10/13
+*/
+
+/*HTML STYLING*/
+html{
+	position: relative; 
+    background-color: rgb(90, 90, 90);
+	font-size: 1.2em;
+}
+
+/*HEADING STYLING*/
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: 900;
+    text-align: center;
+}
+h3{
+    letter-spacing: 2.5px;
+    font-family:Garamond, serif;
+}
+
+/*PARAGRAPH STYLING*/
+p{
+    word-spacing: 2.0px;
+}
+
+/*LIST STYlING*/
+ul{
+    width:fit-content;
+    line-height: 25pt;
+}
+ul > li {
+    border: 4px double black;
+	background-color: hsla(9, 41%, 54%, 0.5);
+    text-transform: capitalize;
+}  
+
+/*BODY STYLING*/
+body{
+	background-color: rgb(228, 174, 152);
+	box-shadow:  rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px; 	
+	width: 100%;
+	max-width: 1200px;
+	min-width: 320px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin:0% auto
+}
+/*IMAGE STYLING*/
+.photo{
+	position: fixed; 
+	overflow-y: scroll;
+	top: 0; right: 0; bottom: 0; left: 0; 
+}
+
+.link{
+
+	text-align: right;
+}
+
+/*FOOTER STYLING*/
+footer{
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 4%;
+	border-top: 3px solid rgb(0, 0, 0);
+	font-family: Garamond, serif;
+    font-style: oblique;
+}
+
+
