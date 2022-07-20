@@ -1,0 +1,80 @@
+@charset "utf-8";
+/*   
+    CSS File
+	Filename : styling.css
+    Author : Manveet Kaur
+	Date : 2021/10/05
+*/
+
+/*HTML*/
+html{
+	position: relative; 
+    background-color: rgb(205, 255, 234);
+	font-size: 1.2em;
+}
+
+/* Universal selector */
+*{ 
+    font-family: "Courier New", "Lucida Console", "Monaco";
+}
+
+/*BODY*/
+body{
+	background-color: rgb(161, 197, 219);
+	box-shadow:  rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px; 	
+	width: 100%;
+	max-width: 1200px;
+	min-width: 320px;
+	border: 4px solid black;
+	border-radius: 5px;
+	margin:0% auto
+}
+
+/*NAVIGATION*/
+nav {
+	
+	overflow: hidden;
+	background-color: rgb(51, 51, 51);
+}
+nav a {
+	float: right;
+	display: block;
+	color: #ececec;
+	text-align: center;
+	padding: 14px 16px;
+}
+nav a:hover {
+	background-color: rgba(255, 99, 71, 0.5);
+	color: black;
+}
+
+/* Class selector */
+.box {
+    background-color: rgb(236, 235, 235);
+    padding: .5em;
+	border-top: 1px;
+} 
+
+/* Pseudo-element selectors */
+p::first-letter{
+    font-size: 130%;
+    font-weight: bolder;
+} 
+
+/* Child combinator */
+ul > li {
+    border: 4px double black;
+	background-color: hsla(9, 41%, 54%, 0.5);
+}  
+
+/*FOOTER*/
+footer{
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 4%;
+	border-top: 3px solid rgb(0, 0, 0);
+	font-family: Garamond, serif;
+	padding-bottom: 20px;
+}
+
+
