@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      Summer Camp Program
+      Author: Manveet Kaur 
+      Date: 2021/11/21
+      Filename: index.html
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Summer Camp Program</title>
+   <link href="reset.css" rel="stylesheet" />
+   <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Summer Camp Program</h1>
+    <img src="camp.jpg" alt="Summer Camp" height="300" width="300"/>
+      <p>In certain countries, a summer camp or sleepaway camp is a supervised programme for children 
+        or teens held over the summer months. Campers are children and teenagers who attend summer camp. 
+        Summer school is frequently part of a student's academic programme to allow them to catch up on work 
+        missed during the school year (summer camps can include academic work, but is not a requirement for graduation).</p>
+
+      <p>In a healthy, safe atmosphere, camp allows children to be physically active,
+        creative, and skilled. It also allows youngsters to develop their social skills 
+        and form friendships. It aids in the development of good living habits and future abilities in youngsters. </p><br/><br/>
+
+      <p>Required values are marked by an asterisk (*)</p>
+<form id="application" action="#" method="post" >
+    <fieldset id="studentInfo">
+        <legend>Student Information</legend>
+        <div class="formRow">
+            <label for="firstName">First Name*</label>
+            <input name="firstName" id="firstName" type="text" placeholder="first name" required/>
+        </div><br/>
+
+        <div class="formRow">
+            <label for="lastname">Last Name*</label>
+            <input name="lastName" id="lastName" type="text" placeholder="last name" required/>
+        </div><br/>
+
+        <div class="formRow">
+            <label for="dateOfBirth">Date Of Birth</label>
+            <input name="dateOfBirth" id="dateOfBirth" type="date" />
+        </div><br/>
+
+        <div class="formRow">
+            <label for="address">Address</label>
+            <input name="address" id="address" type="text"/>
+        </div><br/>     
+
+        <div class="formRow">
+            <label for="city">City</label>
+            <input name="city" id="city" type="text"/>
+        </div><br/>
+
+        <div class="formRow">
+            <label for="province">Province</label>
+            <input name="province" id="province" type="text"/>
+        </div><br/>
+
+        <div class="formRow">
+            <label for="zip">Postal code</label>
+            <input name="zip" id="zip" type="text" placeholder="nnnnn (-nnnn)"
+            pattern="^\d{5}(-\d{4})?$"/>
+        </div><br/>
+
+        <div class="formRow">
+            <label for="phoneNumber">Home phone number</label>
+            <input name="phoneNumber" id="phoneNumber" type="tel"placeholder="(nnn) nnn-nnnn" 
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+        </div><br/>
+
+        <div class="formRow">
+            <label>Are you enrolling in the full-day or half-day program?</label>
+            <fieldset class="optGroup">
+            <label for="fday">full-day</label>
+            <input name="sFriend" id="fday" value="full-day"
+            type="radio" />
+            <label for="hday">half-day</label>
+            <input name="sFriend" id="hday" value="half-day"
+            type="radio" />
+            </fieldset>
+        </div><br/>
+
+        <div class="formRow">
+                <label for="program">What program they are enrolling in?</label>
+                <input name="program" id="program" type="text" list="programList"/>
+            <datalist id="programList">
+                <option value="Art Program">
+                <option value="Music Program">
+                <option value="Dance Program">
+                <option value="Outdoor Program">
+                <option value="Bike Safety">
+                <option value="Sports Program ">
+            </datalist>
+        </div>
+        </fieldset>
+
+
+        <fieldset id="parentsInfo">
+            <legend>Parents Information</legend>
+        <div class="formRow">
+            <label for="parentsName">Parents Name*</label>
+            <input name="parentsName" id="parentsName" type="text" placeholder="first and last name" required/>
+        </div><br/>
+
+        <div class="formRow">
+            <label for="parentsPhone">Parents Cell Phone Number</label>
+            <input name="parentsPhone" id="parentsPhone" type="tel"placeholder="(nnn) nnn-nnnn" 
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+        </div><br/>
+
+        <div class="formRow">
+            <label for="mail">E-mail address*</label>
+            <input name="mail" id="mail" type="email" required/>
+        </div>
+        </fieldset>
+
+        <fieldset id="extraInfo">
+            <legend>Extra Information</legend>
+        <div class="formRow">
+            <label for="info">Where did you hear about us?</label>
+            <select name="infoSrc" id="info" size="5" multiple>
+            <option value="internet">Internet</option>
+            <option value="mag">Magazine</option>
+            <option value="news">Newspaper</option>
+            <option value="word">Word of Mouth</option>
+            <option value="other">Other</option>
+            </select>
+        </div><br/>
+
+        <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+        <label for="mailCB">Add me to your mailing list for great
+            opportunity!</label><br/>
+
+
+        <label for="commBox">Tell us about the information we should keep in mind.</label>
+        <textarea name="custExp" id="commBox"></textarea>
+    </fieldset><br/>
+
+    <div id="buttons">
+        <input type="submit" value="Submit My Form" />
+        <input type="reset" value="Cancel" />
+    </div>
+</form>
+<footer>
+    Copyright 2021 – <a href = "https://www.stclaircollege.ca">St Clair College</a> &#8226; Manveet Kaur &#8226; W0782002
+</footer>
+</body>
+</html>
